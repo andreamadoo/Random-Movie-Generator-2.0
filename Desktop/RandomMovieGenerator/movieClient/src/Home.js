@@ -12,7 +12,7 @@ const Home = ({data,setData}) => {
     return (
         <div className='add-container'>
             <h1>Random Movie Generator</h1>
-            <button onClick={() => getRandom(data)}>Generate Random Movie</button>
+            <button className="glow-on-hover" onClick={() => getRandom(data)}>Generate Random Movie</button>
             {hasCard ? <MovieCard name={random.name} genre={random.genre} url={random.imageUrl}/> : null}
        </div>        
     )

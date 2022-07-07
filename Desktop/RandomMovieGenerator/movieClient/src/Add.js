@@ -38,10 +38,10 @@ return (
     <div className="form">
         <h1>Add Your Movie</h1>
         <form className="form-style" onSubmit={sendData}>
-            <input placeholder='Write Name...' type="text" name='name' value={name} onChange={event => setName(event.target.value)}/>
-            <input placeholder='Write Genre...' type="text" name='genre' value={genre} onChange={event => setGenre(event.target.value)} />
-            <input placeholder='Write Url...' type="text" name='imageUrl' value={url} onChange={event => setUrl(event.target.value)}/>
-            <button>Submit</button>
+            <input className='input-form' placeholder='Write Name...' type="text" name='name' value={name} onChange={event => setName(event.target.value)}/>
+            <input className='input-form' placeholder='Write Genre...' type="text" name='genre' value={genre} onChange={event => setGenre(event.target.value)} />
+            <input className='input-form' placeholder='Write Url...' type="text" name='imageUrl' value={url} onChange={event => setUrl(event.target.value)}/>
+            <button className='glow-on-hover'>Submit</button>
         </form>
         {successMessage ? <p>{successMessage}</p> : null}
   </div>
